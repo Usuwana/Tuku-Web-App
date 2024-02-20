@@ -1,0 +1,13 @@
+.main{
+    height: 100vh;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+.tukuimg{
+    display: block;
+    margin: auto;
+}
