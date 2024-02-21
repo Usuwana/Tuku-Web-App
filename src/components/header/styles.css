@@ -4,8 +4,9 @@
         background-color: black;
         color: aliceblue;
         min-height: 5vh;
-        height: fit-content;
+        height: 50px;
         border-bottom: 1px solid #fff;
+        border-top: 1px solid #fff;
     }
 
     

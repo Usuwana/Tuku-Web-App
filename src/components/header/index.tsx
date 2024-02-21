@@ -5,6 +5,7 @@ import { useState } from "react";
 import useWindowSize from "../../hooks/useWindowSize";
 import { Size } from "../../types";
 import Spacer from "react-styled-spacer";
+import tuku from './/tuku.jpg';
 
 
 
@@ -33,6 +34,7 @@ export const Header  = (props: NavProps) => {
     };
     return (
       <div className="header">
+        <img src={tuku} style={{minHeight: '25px', maxHeight: '50px' }}/>
         <Spacer w={20}/>
         <h5>HOME</h5>
         <Spacer w={20}/>

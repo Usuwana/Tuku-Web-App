@@ -1,6 +1,6 @@
 .main{
     height: 100vh;
-    color: black;
+    background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,4 +10,6 @@
 .tukuimg{
     display: block;
     margin: auto;
+    height: 300;
+    width: 300;
 }
