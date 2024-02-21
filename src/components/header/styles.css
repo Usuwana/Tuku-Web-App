@@ -15,20 +15,41 @@
     }
 
     .home{
+    
 
     }
-    .home:hover{
-        
-    }
+    
     .about{
+       
 
     }
     .albums{
+       
+
+    }
+
+    .home:hover{
+        text-decoration: line-through;
+        text-decoration-color: #fff;
+        text-decoration-thickness: 5px;
+
+    }
+    
+    .about:hover{
+        text-decoration: line-through;
+        text-decoration-color: #fff;
+        text-decoration-thickness: 5px;
+
+    }
+    .albums:hover{
+        text-decoration: line-through;
+        text-decoration-color: #fff;
+        text-decoration-thickness: 5px;
 
     }
 
     .home-active{
-
+        
     }
     .about-active{
 

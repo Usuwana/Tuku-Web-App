@@ -15,7 +15,7 @@ export const Home  = () => {
         setVisible(false);
     };
     return (
-      <div className="home">
+      <div className="home-main">
         <Header home={true} about={false} albums={false}/>
         <Main/>
       </div>

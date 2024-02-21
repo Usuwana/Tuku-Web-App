@@ -33,6 +33,7 @@ export const Header  = (props: NavProps) => {
         setVisible(false);
     };
     return size.width >= 900 ?(
+      <>
       <nav className="header">
         <img src={tuku} style={{minHeight: '25px', maxHeight: '50px' }}/>
         <Spacer w={20}/>
@@ -44,7 +45,7 @@ export const Header  = (props: NavProps) => {
             <Spacer w={20}/>
             <NavLink to="/albums"><h4 className="albums">ALBUMS</h4></NavLink>
         </>
-        ) : props.about ?(
+        ) : props.about ? (
           <>
             <NavLink to="/"><h4 className="home">HOME</h4></NavLink>
             <Spacer w={20}/>
@@ -73,8 +74,10 @@ export const Header  = (props: NavProps) => {
         } 
       </nav>
       
-
+      <Outlet />
+      </>
     ) : (
+      <>
       <nav className="header">
         <img src={tuku} style={{minHeight: '25px', maxHeight: '50px' }}/>
         <Spacer w={20}/>
@@ -87,6 +90,8 @@ export const Header  = (props: NavProps) => {
         </>
         
       </nav>
+      <Outlet />
+</>
 
     )
 }
