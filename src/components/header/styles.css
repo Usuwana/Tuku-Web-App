@@ -49,12 +49,12 @@
     }
 
     .home-active{
-        
+        border: 2px dotted #fff;
     }
     .about-active{
-
+        border: 2px dotted #fff;
     }
     .albums-active{
-        
+        border: 2px dotted #fff;
     }
 }
