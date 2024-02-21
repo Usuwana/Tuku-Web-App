@@ -1,6 +1,9 @@
 import { useState } from "react";
 import useWindowSize from "../../hooks/useWindowSize";
 import { Size } from "../../types";
+import portrait from './/tuku.jpg'
+import "./styles.css";
+import { Header } from "../../components/header";
 
 export const About  = () => {
     const size: Size = useWindowSize();
@@ -12,10 +15,12 @@ export const About  = () => {
         setVisible(false);
     };
     return (
-      <div className="header">
-        <h5>Home</h5>
-        <h5>About</h5>
-        <h5>Albums</h5>
+      <div>
+        <Header home={true} projects={false} contact={false}/>
+      <div className="about">
+        <img src={portrait} style={{height: '100vh'}}/>
+        <p style={{color: 'blue'}}>bhuu</p>
+      </div>
       </div>
       
 

@@ -36,11 +36,14 @@ export const Header  = (props: NavProps) => {
       <div className="header">
         <img src={tuku} style={{minHeight: '25px', maxHeight: '50px' }}/>
         <Spacer w={20}/>
-        <h5>HOME</h5>
-        <Spacer w={20}/>
-        <h5>ABOUT</h5>
-        <Spacer w={20}/>
-        <h5>ALBUMS</h5>
+        <>
+            <NavLink to="/"><h5 className="home-active">HOME</h5></NavLink>
+            <Spacer w={20}/>
+            <NavLink to="/about"><h5 className="about">ABOUT</h5></NavLink>
+            <Spacer w={20}/>
+            <NavLink to="/albums"><h5 className="albums">ALBUMS</h5></NavLink>
+        </>
+        
       </div>
       
 
