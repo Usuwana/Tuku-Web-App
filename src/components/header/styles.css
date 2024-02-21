@@ -9,7 +9,31 @@
         border-top: 1px solid #fff;
     }
 
-    h5 {
+    h4 {
         color: aliceblue;
+        font-family: 'Ink Free';
+    }
+
+    .home{
+
+    }
+    .home:hover{
+        
+    }
+    .about{
+
+    }
+    .albums{
+
+    }
+
+    .home-active{
+
+    }
+    .about-active{
+
+    }
+    .albums-active{
+        
     }
 }

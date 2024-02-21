@@ -15,8 +15,8 @@ export const About  = () => {
         setVisible(false);
     };
     return (
-      <div>
-        <Header home={true} projects={false} contact={false}/>
+      <div className="about-main">
+        <Header home={false} about={true} albums={false}/>
       <div className="about">
         <img src={portrait} style={{height: '100vh'}}/>
         <p style={{color: 'blue'}}>bhuu</p>

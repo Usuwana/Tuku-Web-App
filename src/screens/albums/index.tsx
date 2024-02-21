@@ -1,6 +1,7 @@
 import { useState } from "react";
 import useWindowSize from "../../hooks/useWindowSize";
 import { Size } from "../../types";
+import { Header } from "../../components/header";
 
 export const Albums  = () => {
     const size: Size = useWindowSize();
@@ -12,10 +13,8 @@ export const Albums  = () => {
         setVisible(false);
     };
     return (
-      <div className="header">
-        <h5>Home</h5>
-        <h5>About</h5>
-        <h5>Albums</h5>
+      <div>
+        <Header home={false} about={false} albums={true}/>
       </div>
       
 

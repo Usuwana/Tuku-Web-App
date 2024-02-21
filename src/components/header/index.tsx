@@ -19,8 +19,8 @@ const headingStyle = {
 
   type NavProps = {
     home: boolean
-    projects: boolean
-    contact: boolean
+    about: boolean
+    albums: boolean
 }
 
 export const Header  = (props: NavProps) => {
@@ -32,20 +32,61 @@ export const Header  = (props: NavProps) => {
     const onClose = () => {
         setVisible(false);
     };
-    return (
-      <div className="header">
+    return size.width >= 900 ?(
+      <nav className="header">
+        <img src={tuku} style={{minHeight: '25px', maxHeight: '50px' }}/>
+        <Spacer w={20}/>
+        {props.home ? (
+        <>
+            <NavLink to="/"><h4 className="home-active">HOME</h4></NavLink>
+            <Spacer w={20}/>
+            <NavLink to="/about"><h4 className="about">ABOUT</h4></NavLink>
+            <Spacer w={20}/>
+            <NavLink to="/albums"><h4 className="albums">ALBUMS</h4></NavLink>
+        </>
+        ) : props.about ?(
+          <>
+            <NavLink to="/"><h4 className="home">HOME</h4></NavLink>
+            <Spacer w={20}/>
+            <NavLink to="/about"><h4 className="about-active">ABOUT</h4></NavLink>
+            <Spacer w={20}/>
+            <NavLink to="/albums"><h4 className="albums">ALBUMS</h4></NavLink>
+        </>
+        ) : props.albums ?
+        (
+          <>
+            <NavLink to="/"><h4 className="home">HOME</h4></NavLink>
+            <Spacer w={20}/>
+            <NavLink to="/about"><h4 className="about">ABOUT</h4></NavLink>
+            <Spacer w={20}/>
+            <NavLink to="/albums"><h4 className="albums-active">ALBUMS</h4></NavLink>
+        </>
+        ) : (
+          <>
+            <NavLink to="/"><h4 className="home">HOME</h4></NavLink>
+            <Spacer w={20}/>
+            <NavLink to="/about"><h4 className="about">ABOUT</h4></NavLink>
+            <Spacer w={20}/>
+            <NavLink to="/albums"><h4 className="albums">ALBUMS</h4></NavLink>
+        </>
+        )
+        } 
+      </nav>
+      
+
+    ) : (
+      <nav className="header">
         <img src={tuku} style={{minHeight: '25px', maxHeight: '50px' }}/>
         <Spacer w={20}/>
         <>
-            <NavLink to="/"><h5 className="home-active">HOME</h5></NavLink>
+            <NavLink to="/"><h4 className="home-active">HOME</h4></NavLink>
             <Spacer w={20}/>
-            <NavLink to="/about"><h5 className="about">ABOUT</h5></NavLink>
+            <NavLink to="/about"><h4 className="about">ABOUT</h4></NavLink>
             <Spacer w={20}/>
-            <NavLink to="/albums"><h5 className="albums">ALBUMS</h5></NavLink>
+            <NavLink to="/albums"><h4 className="albums">ALBUMS</h4></NavLink>
         </>
         
-      </div>
-      
+      </nav>
 
     )
 }

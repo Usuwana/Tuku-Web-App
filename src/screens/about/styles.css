@@ -1,4 +1,10 @@
 .about{
     display: flex;
     flex-direction: row;
+    min-height: 100vh;
+}
+
+.about-main {
+    min-height: 100vh;
+    background-color: black;
 }
