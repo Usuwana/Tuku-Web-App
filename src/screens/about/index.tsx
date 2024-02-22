@@ -17,9 +17,17 @@ export const About  = () => {
     return (
       <div className="about-main">
         <Header home={false} about={true} albums={false}/>
-      <div className="about">
+      <div className="about-Tuku">
         <img src={portrait} style={{height: '100vh'}}/>
-        <p style={{color: 'blue'}}>bhuu</p>
+        <div>
+          <h2 style={{color: 'aliceblue'}}>About Oliver Mtukudzi</h2>
+        <p style={{color: 'aliceblue'}}>Mtukudzi's journey in music began at an early age, and he quickly mastered various instruments, including the guitar, which would become his signature instrument. His exceptional talent and dedication to his craft soon gained recognition, and by the 1970s, he had established himself as a prominent artist in the Zimbabwean music scene.</p>
+        <p style={{color: 'aliceblue'}}>Beyond the realm of music, Mtukudzi became a cultural icon and a source of inspiration for many Zimbabweans. His music, characterized by profound lyrics and a fusion of traditional rhythms with modern influences, resonated deeply with the people. He addressed social issues, love, and the complexities of life in Zimbabwe, earning him a special place in the hearts of his fellow countrymen. </p>
+        <p style={{color: 'aliceblue'}}>Oliver Mtukudzi's significance goes beyond his musical prowess; he became a unifying force in Zimbabwe, fostering a sense of national identity and pride through his compositions. His songs often carried messages of hope, resilience, and the celebration of cultural heritage.</p>
+        <p style={{color: 'aliceblue'}}>Internationally, Mtukudzi transcended the boundaries of Zimbabwean music, captivating audiences worldwide with his unique sound. He collaborated with artists from diverse backgrounds, contributing to the global appreciation of African music. His influence extended beyond the music industry, making him a respected ambassador for Zimbabwean culture on the international stage.</p>
+        <p style={{color: 'aliceblue'}}>Oliver Mtukudzi's legacy endures not only through his extensive discography but also through the countless lives he touched with his music. He passed away on January 23, 2019, leaving behind a profound impact on the world of music and a lasting imprint on the hearts of Zimbabweans, who continue to celebrate his contributions to their cultural heritage.</p>
+        </div>
+        
       </div>
       </div>
       
