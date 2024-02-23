@@ -8,3 +8,19 @@
     min-height: 100vh;
     background-color: black;
 }
+
+.apple:hover{
+    opacity: 0.5;
+}
+
+.spotify:hover{
+    opacity: 0.5;
+}
+
+.ytmusic:hover{
+    opacity: 0.5;
+} 
+
+.youtube:hover{
+    opacity: 0.5;
+}
