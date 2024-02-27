@@ -9,6 +9,8 @@ import apple from './/apple.png';
 import "./styles.css";
 import { Header } from "../../components/header";
 import Spacer from "react-styled-spacer";
+import { Fade } from "react-awesome-reveal";
+import { Slide } from "react-awesome-reveal";
 
 export const About  = () => {
     const size: Size = useWindowSize();
@@ -25,7 +27,10 @@ export const About  = () => {
       <div className="about-Tuku">
         <img src={portrait} style={{height: '100vh'}}/>
         <div>
-          <h2 style={{color: 'aliceblue'}}>About Oliver Mtukudzi</h2>
+          {/* <h2 style={{color: 'aliceblue'}}>About Oliver Mtukudzi</h2> */}
+          <Fade cascade damping={0.1}>
+          <h2 style={{color: 'aliceblue', fontFamily: 'Ink Free'}}>ABOUT OLIVER MTUKUDZI</h2>
+        
         <p style={{color: 'aliceblue'}}>Mtukudzi's journey in music began at an early age, and he quickly mastered various instruments, including the guitar, which would become his signature instrument. His exceptional talent and dedication to his craft soon gained recognition, and by the 1970s, he had established himself as a prominent artist in the Zimbabwean music scene.</p>
         <p style={{color: 'aliceblue'}}>Beyond the realm of music, Mtukudzi became a cultural icon and a source of inspiration for many Zimbabweans. His music, characterized by profound lyrics and a fusion of traditional rhythms with modern influences, resonated deeply with the people. He addressed social issues, love, and the complexities of life in Zimbabwe, earning him a special place in the hearts of his fellow countrymen. </p>
         <p style={{color: 'aliceblue'}}>Oliver Mtukudzi's significance goes beyond his musical prowess; he became a unifying force in Zimbabwe, fostering a sense of national identity and pride through his compositions. His songs often carried messages of hope, resilience, and the celebration of cultural heritage.</p>
@@ -40,6 +45,7 @@ export const About  = () => {
           <Spacer w={20}/>
           <a href="https://www.youtube.com/channel/UC-K797_lLK1QjhkXsWzMXNQ" target="_blank"><img src={youtube} style={{width: '40px'}} className="youtube"/></a>
         </div>
+        </Fade>
         </div>
         
         
