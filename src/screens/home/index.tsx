@@ -4,6 +4,7 @@ import { Size } from "../../types";
 import { Header } from "../../components/header";
 import { Main } from "../../components/main";
 import "./styles.css";
+import { About } from "../about";
 
 export const Home  = () => {
     const size: Size = useWindowSize();
@@ -18,6 +19,7 @@ export const Home  = () => {
       <div className="home-main">
         <Header home={true} about={false} albums={false}/>
         <Main/>
+        <About/>
       </div>
       
 

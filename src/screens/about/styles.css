@@ -1,8 +1,20 @@
 .about-Tuku{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     min-height: 100vh;
 }
+
+h1 {
+    /* background: url(https://raw.githubusercontent.com/s1mpson/-/master/codepen/black-lives-matter/victim-collage.png);
+    background-size: 40%;
+    background-position: 50% 50%;
+    -webkit-background-clip: text;
+    color: hsla(0, 0%, 0%, 0.08);
+    animation: zoomout 10s ease 500ms forwards; */
+    font-size: 10vw!important;
+  }
+  
+  
 
 .about-main {
     min-height: 100vh;
