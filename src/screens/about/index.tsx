@@ -25,7 +25,7 @@ export const About  = () => {
     };
     return (
       <div className="about-main">
-        {/* <Header home={false} about={true} albums={false}/> */}
+         <Header home={false} about={true} albums={false}/>
       <div className="about-Tuku">
         {/* <img src={portrait} style={{height: '100vh'}}/> */}
         <div>

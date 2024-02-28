@@ -19,7 +19,7 @@ export const Home  = () => {
       <div className="home-main">
         <Header home={true} about={false} albums={false}/>
         <Main/>
-        <About/>
+        {/* <About/> */}
       </div>
       
 
