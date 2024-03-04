@@ -5,13 +5,26 @@
 }
 
 h1 {
-    /* background: url(https://raw.githubusercontent.com/s1mpson/-/master/codepen/black-lives-matter/victim-collage.png);
-    background-size: 40%;
-    background-position: 50% 50%;
-    -webkit-background-clip: text;
-    color: hsla(0, 0%, 0%, 0.08);
-    animation: zoomout 10s ease 500ms forwards; */
-    font-size: 10vw!important;
+    background-image: url(
+"om.jpg");
+            background-repeat: repeat;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-top: 10px;
+            font-size: 120px;
+            text-align: center;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-family: 'Steelfish Rg', 'helvetica neue', 
+                            helvetica, arial, sans-serif;
+            font-weight: 800;
+            -webkit-font-smoothing: antialiased;
+            
+  }
+
+  .cover-tuku{
+    background-image: 'olicover.jpg';
+    background-color: aliceblue;
   }
   
   
