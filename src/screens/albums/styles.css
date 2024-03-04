@@ -1,0 +1,7 @@
+.albums-cover{
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    width: 100%;
+    min-height: 40vh;
+}
