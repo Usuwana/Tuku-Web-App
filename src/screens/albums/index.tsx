@@ -51,6 +51,8 @@ export const Albums  = () => {
       fetchData();
     }, []);
 
+    
+
     const removeDuplicateIds = (apiData: any[]) => {
       const uniqueIds = new Set();
       return apiData.filter(item => {
