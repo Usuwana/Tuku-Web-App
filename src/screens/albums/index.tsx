@@ -67,16 +67,21 @@ export const Albums  = () => {
      
   
     if (isLoading) {
-      return <ReactLoading type="bars" color="white" height={100} width={100} />;
+      return <div className="load-albums">
+        <ReactLoading type="bars" color="white" height={100} width={100} />
+      </div>;
     }
     return (
       <div>
         <Header home={false} about={false} albums={true}/>
-        <div className="albums-cover"> 
+        {/* <div className="albums-cover"> 
           
         
 
-        </div>
+        </div> */}
+        <ul>
+           
+        </ul>
       </div>
       
 

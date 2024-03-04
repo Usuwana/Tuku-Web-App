@@ -5,3 +5,11 @@
     width: 100%;
     min-height: 40vh;
 }
+.load-albums{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Ensure the container takes the full viewport height */
+    text-align: center; 
+  
+}
