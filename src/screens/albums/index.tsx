@@ -4,7 +4,8 @@ import { Size } from "../../types";
 import { Header } from "../../components/header";
 import "./styles.css";
 import ReactLoading from 'react-loading';
-import { NavLink, Outlet, Link } from "react-router-dom";
+import { NavLink, Outlet, Link, } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export const Albums  = () => {
 
@@ -22,6 +23,12 @@ export const Albums  = () => {
     const [visible, setVisible] = useState(false);
     const [data, setData] = useState<Item[]>([]);
     const [isLoading, setIsLoading] = useState(true);
+    const navigate = useNavigate();
+
+    const navigateToNewPage = (param: any) => {
+      // Redirect to the Details page with the specified parameter
+      navigate(`/details/${param}`);
+    };
     
     
 
@@ -97,14 +104,12 @@ export const Albums  = () => {
         <ul className="album-card-list">
         {data.map((item) => (
             <li key={item.album.id}>
-              <NavLink to="/about" style={{textDecoration: "none"}}>
-              <div className="album-card">
+              <div className="album-card" onClick={() => navigateToNewPage(item.album.id)} style={{cursor: "pointer"}}>
                 <img src={item.album.cover_big}/>
                 <div className="album-card-content">
                   <h3 style={{color: "black", textDecoration: "none"}}>{item.album.title}</h3>
                 </div>
               </div>
-              </NavLink>
             </li>
             // Customize the above line based on your data structure
           ))}

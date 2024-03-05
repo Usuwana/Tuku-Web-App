@@ -5,6 +5,7 @@ import { Home } from './screens/home';
 import { About } from './screens/about';
 import {BrowserRouter, Routes, Route } from "react-router-dom";
 import { Albums } from './screens/albums';
+import { IndividualAlbums } from './screens/individual_album';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
               <Route index element={<Home />} />
               <Route path="about" element={<About />} />
               <Route path="albums" element={<Albums />} />
+              <Route path="/details/:param" element={<IndividualAlbums/>} />
             {/* </Route> */}
           </Routes>
        </BrowserRouter>
