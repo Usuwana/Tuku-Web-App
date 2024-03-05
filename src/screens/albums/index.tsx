@@ -4,6 +4,7 @@ import { Size } from "../../types";
 import { Header } from "../../components/header";
 import "./styles.css";
 import ReactLoading from 'react-loading';
+import { NavLink, Outlet, Link } from "react-router-dom";
 
 export const Albums  = () => {
 
@@ -72,6 +73,12 @@ export const Albums  = () => {
         return false;
       });
     };
+
+    const handleItemClick = () => {
+      // Handle click event here
+      
+      //navigation.navigate('Tracklist', {params: item});
+    };
      
   
     if (isLoading) {
@@ -90,16 +97,18 @@ export const Albums  = () => {
         <ul className="album-card-list">
         {data.map((item) => (
             <li key={item.album.id}>
+              <NavLink to="/about" style={{textDecoration: "none"}}>
               <div className="album-card">
                 <img src={item.album.cover_big}/>
                 <div className="album-card-content">
-                  <h3>{item.album.title}</h3>
+                  <h3 style={{color: "black", textDecoration: "none"}}>{item.album.title}</h3>
                 </div>
               </div>
+              </NavLink>
             </li>
             // Customize the above line based on your data structure
           ))}
-        </ul>
+        </ul>                                                                                                        
       </div>
       
 

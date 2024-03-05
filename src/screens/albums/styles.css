@@ -18,6 +18,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    background: linear-gradient(0deg, gray, black);
+    list-style: none;
   }
 
 .album-card {
