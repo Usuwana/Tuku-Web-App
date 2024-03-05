@@ -50,7 +50,7 @@ export const IndividualAlbums  = () => {
 
       if (isLoading) {
         return <div className="load-albums">
-          <ReactLoading type="bars" color="white" height={100} width={100} />
+          <ReactLoading type="spokes" color="white" height={100} width={100} />
         </div>;
       }
 
