@@ -4,7 +4,7 @@
     min-height: 100vh;
 }
 
-h1 {
+.cover-tuku h1 {
     background-image: url(
 "om.jpg");
             background-repeat: repeat;

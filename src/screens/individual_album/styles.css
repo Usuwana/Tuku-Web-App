@@ -4,5 +4,22 @@
 }
 
 .individual-cover{
+    display: flex;
+    flex-direction: row;
     border-bottom: 1px solid #fff;
+    justify-content: left;
+    align-items: left;
+}
+
+.individual-cover h1{
+    color: #fff;
+    font-size: 5vw;
+    padding-left: 5vw;
+    text-align: center;
+    margin: auto;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Steelfish Rg', 'helvetica neue', 
+                            helvetica, arial, sans-serif;
+    font-weight: 800;
 }

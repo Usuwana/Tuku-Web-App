@@ -58,7 +58,8 @@ export const IndividualAlbums  = () => {
         <div className='individual-album'>
             <Header home={false} about={false} albums={true}/>
             <div className='individual-cover'>
-                <img src={data.cover_big}/>
+                <img src={data.cover_big} style={{width: '300px' }}/>
+                <h1>{data.title}</h1>
             </div>
 
         </div>
