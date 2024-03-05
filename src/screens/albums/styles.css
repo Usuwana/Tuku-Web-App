@@ -13,3 +13,21 @@
     text-align: center; 
   
 }
+.album-card {
+    width: 300px;
+    margin: 10px;
+    background-color: gray;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .album-card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .album-card-content {
+    padding: 16px;
+  }

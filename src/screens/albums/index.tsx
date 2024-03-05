@@ -6,21 +6,29 @@ import "./styles.css";
 import ReactLoading from 'react-loading';
 
 export const Albums  = () => {
+
+  interface Item {
+    album: Album;
+    
+  }
+
+  interface Album {
+    id: number;
+    title: string;
+    cover_big: any;
+  }
     const size: Size = useWindowSize();
     const [visible, setVisible] = useState(false);
-    const [data, setData] = useState<number[]>([]);
+    const [data, setData] = useState<Item[]>([]);
     const [isLoading, setIsLoading] = useState(true);
-    const showDrawer = () => {
-        setVisible(true);
-    };
-    const onClose = () => {
-        setVisible(false);
-    };
+    
+    
 
     useEffect(() => {
+      console.log('we are here right now')
       // Call the function when the component mounts
       const fetchData = async() => {
-        //console.log("whaaaaaaatttt")
+        console.log("whaaaaaaatttt")
         const url = 'https://deezerdevs-deezer.p.rapidapi.com/search?q=oliver%20mtukudzi';
         const options = {
             method: 'GET',
@@ -37,7 +45,7 @@ export const Albums  = () => {
             //console.log(result)
             const uniqueData = removeDuplicateIds(result.data);
             setData(uniqueData);
-            //console.log(uniqueData)
+            console.log(uniqueData)
             setIsLoading(false);
             //console.log("lets go")
             //console.log(result.data);
@@ -80,7 +88,17 @@ export const Albums  = () => {
 
         </div> */}
         <ul>
-           
+        {data.map((item) => (
+            <li key={item.album.id}>
+              <div className="album-card">
+                <img src={item.album.cover_big}/>
+                <div className="album-card-content">
+                  <h3>{item.album.title}</h3>
+                </div>
+              </div>
+            </li>
+            // Customize the above line based on your data structure
+          ))}
         </ul>
       </div>
       
