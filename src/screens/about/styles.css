@@ -1,51 +1,56 @@
-.about-Tuku{
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+@media only screen and (min-width: 900px) {
+    .about-Tuku{
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+    
+    .cover-tuku h1 {
+        background-image: url(
+    "om.jpg");
+                background-repeat: repeat;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                margin-top: 1px;
+                font-size: 120px;
+                text-align: center;
+                font-weight: bold;
+                text-transform: uppercase;
+                font-family: 'Steelfish Rg', 'helvetica neue', 
+                                helvetica, arial, sans-serif;
+                font-weight: 800;
+                -webkit-font-smoothing: antialiased;
+                
+      }
+    
+      .cover-tuku{
+        background-image: 'olicover.jpg';
+        background-color: aliceblue;
+      }
+      
+      
+    
+    .about-main {
+        min-height: 100vh;
+        background-color: black;
+    }
+    
+    .apple:hover{
+        opacity: 0.5;
+    }
+    
+    .spotify:hover{
+        opacity: 0.5;
+    }
+    
+    .ytmusic:hover{
+        opacity: 0.5;
+    } 
+    
+    .youtube:hover{
+        opacity: 0.5;
+    }
 }
 
-.cover-tuku h1 {
-    background-image: url(
-"om.jpg");
-            background-repeat: repeat;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            margin-top: 1px;
-            font-size: 120px;
-            text-align: center;
-            font-weight: bold;
-            text-transform: uppercase;
-            font-family: 'Steelfish Rg', 'helvetica neue', 
-                            helvetica, arial, sans-serif;
-            font-weight: 800;
-            -webkit-font-smoothing: antialiased;
-            
-  }
+@media only screen and (min-width: 320px) and (max-width: 900px){}
 
-  .cover-tuku{
-    background-image: 'olicover.jpg';
-    background-color: aliceblue;
-  }
-  
-  
-
-.about-main {
-    min-height: 100vh;
-    background-color: black;
-}
-
-.apple:hover{
-    opacity: 0.5;
-}
-
-.spotify:hover{
-    opacity: 0.5;
-}
-
-.ytmusic:hover{
-    opacity: 0.5;
-} 
-
-.youtube:hover{
-    opacity: 0.5;
-}

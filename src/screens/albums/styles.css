@@ -1,4 +1,5 @@
-.albums-cover{
+@media only screen and (min-width: 900px) {
+  .albums-cover{
     display: flex;
     flex-direction: column;
     background-color: aliceblue;
@@ -40,3 +41,9 @@
   .album-card-content {
     padding: 16px;
   }
+
+}
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 900px){}
