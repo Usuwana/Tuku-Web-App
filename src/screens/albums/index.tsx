@@ -87,7 +87,7 @@ export const Albums  = () => {
         
 
         </div> */}
-        <ul>
+        <ul className="album-card-list">
         {data.map((item) => (
             <li key={item.album.id}>
               <div className="album-card">
